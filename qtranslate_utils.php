@@ -353,7 +353,7 @@ function qtranxf_complete_url_info_path(&$urlinfo){
  * Simplified version of WP's add_query_arg
  * @since 3.2.8
  */
-function qtranxf_add_query_arg(&$query, $key_value){
+function qtranxf_add_query_arg($query, $key_value){
 	if(empty($query)) $query = $key_value;
 	else $query .= '&'.$key_value;
 }
@@ -362,7 +362,7 @@ function qtranxf_add_query_arg(&$query, $key_value){
  * Simplified version of WP's remove_query_arg
  * @since 3.2.8
  */
-function qtranxf_del_query_arg(&$query, $key){
+function qtranxf_del_query_arg($query, $key){
 	//$key_value;
 	$match;
 	while(preg_match('/(&|&amp;|&#038;|^)('.$key.'=[^&]+)(&|&amp;|&#038;|$)/i',$query,$match)){
