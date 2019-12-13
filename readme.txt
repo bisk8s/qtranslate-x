@@ -67,6 +67,8 @@ We thank our sponsors for persistent help and support:
 
 ## Installation ##
 
+**Important**: It only works with the [classic editor plugin](https://wordpress.org/plugins/classic-editor/)
+
 **Important**: Read [migration instructions](https://qtranslatexteam.wordpress.com/migration/), if you previously used other multilingual plugin, otherwise initial installation of this plugin is no different from any other standard plugin. It may help to review [Startup Guide](https://qtranslatexteam.wordpress.com/startup-guide/ "Startup Guide") in order to get an idea on what to expect.
 
 **Very Important**: Whenever you update the plugin, make sure to deactivate the previous version and then activate the new one. Normal WordPress update does that, and should be sufficient, but if you overwrite plugin files manually, be sure to execute deactivation/activation cycle, otherwise you will miss the execution of activation hooks and some options may become misconfigured. For the sake of performance, plugin is not programmed to run all the necessary checks every time it is loaded, since activation hook is an expensive operation. That is why it is important to execute deactivation/activation cycle.
